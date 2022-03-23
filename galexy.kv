@@ -1,0 +1,16 @@
+#:import menu menu
+MainWidget:
+<MainWidget>:
+    canvas.before:
+        Rectangle:
+            size: self.size
+            source: "bg1.jpg"
+    menu_widget: menu_widget
+    MenuWidget:
+        id: menu_widget
+    Label:
+        text: "SCORE: " + str(root.score)
+        pos_hint: {"x": 0, "top": 1}
+        size_hint: .2, .2
+        font_size: "20dp"
+        font_name:"Eurostile.ttf"
